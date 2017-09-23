@@ -20,4 +20,15 @@
 
 	/* End Utils */
 	console.log( d.qS("BODY").qS("#main-menu") ); 
+
+
+
 }());
+
+//FileReader
+var FileReader = {
+	el: null,
+	init: function() {
+
+	}
+};

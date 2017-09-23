@@ -3,11 +3,42 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Pic2Text</title>
+	<link rel="stylesheet" href="css/main.css">
 </head>
 <body id="page">
-	<header>
-		<nav id="main-menu"></nav>
+	<header id="header">
+		<nav id="main-menu">
+			<ul>
+				<li>
+					<a href="#">Gallery</a>
+				</li>
+				<li>
+					<a href="#">Editor</a>
+				</li>
+				<li>
+					<a href="#">Authors</a>
+				</li>
+			</ul>
+		</nav>
 	</header>
+	
+	<!-- Body wrapper -->
+	<div id="content">
+		<section id="file-uploader">
+			<label for="file">Choose your image from gallery:
+			<input type="file" id="file">
+			</label>
+			or
+			<label for="drop-file">
+				<div id="drop-file"></div>
+			</label>
+		</section>
+
+		<section id="pic2text-editor">
+			<canvas id="canvas"></canvas>
+		</section>
+	</div>
+	<!-- End Body wrapper -->
 
 	<!-- Scripts Init -->
 	<script src="js/main.js"></script>
